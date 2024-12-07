@@ -2,6 +2,3 @@ if SHIELD_GRIN3
   config ZMK_KEYBOARD_NAME
   default "grin3"
 endif
-
-config SPI
-    default y

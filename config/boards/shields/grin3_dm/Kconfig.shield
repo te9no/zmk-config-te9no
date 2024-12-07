@@ -1,2 +1,0 @@
-config SHIELD_GRIN3
-  def_bool $(shields_list_contains,grin3)
