@@ -1,34 +1,20 @@
 #include <physical_layouts.dtsi>
 #include <dt-bindings/zmk/bt.h>
+ 
+#define INPUT_EV_KEY 0x01               /**< Key event */
+#define INPUT_EV_REL 0x02               /**< Relative coordinate event */
+#define INPUT_EV_ABS 0x03               /**< Absolute coordinate event */
+#define INPUT_EV_MSC 0x04               /**< Miscellaneous event */
+#define INPUT_EV_VENDOR_START 0xf0      /**< Vendor specific event start */
+#define INPUT_EV_VENDOR_STOP 0xff       /**< Vendor specific event stop */
 
-/ {
-  chosen {
-    zmk,physical-layout = &grin3_physical_layout;
-  };
+#define INPUT_REL_X 0x00                /**< Relative X coordinate */
+#define INPUT_REL_Y 0x01                /**< Relative Y coordinate */
+#define INPUT_REL_WHEEL 0x08            /**< Relative wheel coordinate */
+#define INPUT_REL_HWHEEL 0x06           /**< Relative horizontal wheel coordinate */
+#define INPUT_REL_MISC 0x09             /**< Relative misc coordinate */
 
-  grin3_physical_layout: grin3_physical_layout {
-      compatible = "zmk,physical-layout";
-      display-name = "Default";
-      transform = <&default_transform>;
-      kscan = <&kscan0>;
 
-      keys  //                     w   h    x    y     rot    rx    ry
-          = <&key_physical_attrs 100 100    0    0       0     0     0>
-          , <&key_physical_attrs 100 100  100    0       0     0     0>
-          , <&key_physical_attrs 100 100  201    2     375   251    52>
-          , <&key_physical_attrs 150 100    0  100       0     0     0>
-          , <&key_physical_attrs 100 100  150  100     125   200   150>
-          , <&key_physical_attrs 100 100  251  107     625   301   157>
-          , <&key_physical_attrs 175 100    0  200       0     0     0>
-          , <&key_physical_attrs 100 100  175  201     250   225   251>
-          , <&key_physical_attrs 100 100  276  210     750   326   260>
-          , <&key_physical_attrs 100 100  375  227    1250   425   277>
-          , <&key_physical_attrs 225 100    0  300       0     0     0>
-          , <&key_physical_attrs 100 100  226  304     500   276   354>
-          , <&key_physical_attrs 100 100  326  318    1000   376   368>
-          ;
-    };
-    
     &trackball {
       status = "okay";
     	irq-gpios = <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
@@ -44,4 +30,3 @@
       pinctrl-names = "default", "sleep";
       cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
   };
-};
