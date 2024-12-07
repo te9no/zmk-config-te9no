@@ -1,6 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "grin3_dm.dtsi"
-#include "grin3_dm-pinctrl.dtsi"
+#include "grin3.dtsi"
+#include "grin3-pinctrl.dtsi"
 
 / {
   chosen {
