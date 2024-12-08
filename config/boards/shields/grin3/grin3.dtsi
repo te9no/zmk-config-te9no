@@ -1,4 +1,3 @@
-#include <physical_layouts.dtsi>
 #include <dt-bindings/zmk/bt.h>
  
 #define INPUT_EV_KEY 0x01               /**< Key event */
