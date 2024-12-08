@@ -14,11 +14,6 @@
 #define INPUT_REL_HWHEEL 0x06           /**< Relative horizontal wheel coordinate */
 #define INPUT_REL_MISC 0x09             /**< Relative misc coordinate */
 
-&shifter {
-    status = "okay";
-    #cs-gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
-};
-
 &trackball {
     status = "okay";
     	irq-gpios = <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
