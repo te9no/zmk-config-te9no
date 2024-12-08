@@ -1,7 +1,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
-#include "grin3.dtsi"
 #include "grin3-pinctrl.dtsi"
+#include "grin3.dtsi"
+
 
 / {
   chosen {
