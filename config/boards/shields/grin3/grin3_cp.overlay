@@ -50,4 +50,5 @@
  
         interrupt-gpios = <&shifter 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
+  };
 };
