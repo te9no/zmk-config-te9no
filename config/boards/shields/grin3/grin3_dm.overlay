@@ -31,7 +31,7 @@
           ;
     };
 
-    &default_transform: keymap_transform_0 {
+    default_transform: keymap_transform_0 {
       compatible = "zmk,matrix-transform";
       columns = <3>;
       rows = <2>;
@@ -43,7 +43,8 @@
         RC(4,0) RC(4,1) RC(4,2)
         >;
     };
-    &kscan0 {
+    
+    kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         col-gpios
             = <&shifter 0 GPIO_ACTIVE_HIGH>
