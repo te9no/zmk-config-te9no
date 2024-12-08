@@ -1,5 +1,4 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <physical_layouts.dtsi>
 #include "grin3-pinctrl.dtsi"
 #include "grin3.dtsi"
 
@@ -7,9 +6,9 @@
 / {
   chosen {
     zmk,physical-layout = &grin3_physical_layout;
-  };
 
-    default_transform: keymap_transform_0 {
+
+default_transform: keymap_transform_0 {
       compatible = "zmk,matrix-transform";
       columns = <3>;
       rows = <2>;
@@ -56,6 +55,4 @@
           , <&key_physical_attrs 100 100  326  318    1000   376   368>
           ;
     };
-
-
-};
+}
