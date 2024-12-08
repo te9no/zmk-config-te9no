@@ -6,7 +6,7 @@
 / {
   chosen {
     zmk,physical-layout = &grin3_physical_layout;
-
+  };
 
 default_transform: keymap_transform_0 {
       compatible = "zmk,matrix-transform";
@@ -55,4 +55,4 @@ default_transform: keymap_transform_0 {
           , <&key_physical_attrs 100 100  326  318    1000   376   368>
           ;
     };
-}
+};
