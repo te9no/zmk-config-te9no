@@ -13,7 +13,7 @@
 #define INPUT_REL_HWHEEL 0x06           /**< Relative horizontal wheel coordinate */
 #define INPUT_REL_MISC 0x09             /**< Relative misc coordinate */
 
-kscan0: kscan_0 {
+&kscan0: kscan_0 {
 };
         
   &trackball {
