@@ -1,2 +1,5 @@
-config SHIELD_GRIN3
-  def_bool $(shields_list_contains,grin3)
+config SHIELD_GRIN3_DM
+  def_bool $(shields_list_contains,grin3_dm)
+  
+config SHIELD_GRIN3_CP
+  def_bool $(shields_list_contains,grin3_cp)
