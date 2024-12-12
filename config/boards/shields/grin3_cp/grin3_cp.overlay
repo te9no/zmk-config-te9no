@@ -38,7 +38,7 @@
 };
 
 &spi0 {
-    status = "okay";
+    status = "disabled";
     cs-gpios =  <&xiao_d 0 GPIO_ACTIVE_LOW>, <&xiao_d 1 GPIO_ACTIVE_LOW>;
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
@@ -110,6 +110,14 @@
               <&shifter 3 (GPIO_ACTIVE_LOW)>
             ;
     };
+};
+
+&trackball {
+    status = "okay";
+	cpi = <400>;
+	evt-type = <INPUT_EV_REL>;
+	x-input-code = <INPUT_REL_X>;
+	y-input-code = <INPUT_REL_Y>;
 };
 
 / {
