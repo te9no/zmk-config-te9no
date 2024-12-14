@@ -126,7 +126,7 @@
               <&shifter 13 (GPIO_ACTIVE_LOW)>,
               <&shifter 14 (GPIO_ACTIVE_LOW)>,
               <&shifter 15 (GPIO_ACTIVE_LOW)>,
-              <&shifter 16 (GPIO_ACTIVE_LOW)>,
+              <&shifter 16 (GPIO_ACTIVE_LOW)>
             ;
     };
 };
