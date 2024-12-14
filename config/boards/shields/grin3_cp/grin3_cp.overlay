@@ -165,7 +165,7 @@
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-charlieplex";
 //        compatible = "zmk,kscan-gpio-matrix";
-        interrupt-gpios = <&shifter 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        interrupt-gpios = <&xiao_d 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         gpios
             = <&shifter 0 (GPIO_ACTIVE_LOW)>
             , <&shifter 1 (GPIO_ACTIVE_LOW)>
