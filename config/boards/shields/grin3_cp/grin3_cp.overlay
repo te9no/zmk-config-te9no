@@ -198,7 +198,7 @@
 //              <&shifter 15 (GPIO_ACTIVE_LOW)>,
 //              <&shifter 16 (GPIO_ACTIVE_LOW)>
 //            ;
-//    };
+    };
 };
 
 &trackball {
